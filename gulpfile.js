@@ -13,7 +13,7 @@ var
     autoprefixer = require('autoprefixer'),
     mqpacker = require('css-mqpacker'),
     cssnano = require('cssnano'),
-
+    browserSync = require('browser-sync').create(),
     // development mode?
     devBuild = true,
 
@@ -85,8 +85,23 @@ gulp.task('css', gulp.series(['images'], function () {
 
 }));
 
+
+gulp.task('bootstrapcss', function () {
+    return gulp.src('node_modules/bootstrap/scss/bootstrap.scss')
+        .pipe(sass())
+        .pipe(gulp.dest(folder.build + 'css/'))
+        .pipe(browserSync.stream());
+});
+
+
+gulp.task('bootstrapjs', function () {
+    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/popper.js/dist/popper.min.js'])
+        .pipe(gulp.dest(folder.build + 'js/'))
+        .pipe(browserSync.stream());
+});
+
 // run all tasks
-gulp.task('run', gulp.series(['html', 'css', 'js']));
+gulp.task('run', gulp.series(['html', 'css', 'js','bootstrapcss','bootstrapjs']));
 
 gulp.task('watch', function () {
 

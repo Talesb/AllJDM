@@ -24,7 +24,7 @@
   h1 {
     text-align: center; }
   #logo-image {
-    width: 90px; }
+    width: 91px; }
   #redsilvia-image {
     width: 98%; }
   .footer-text {
@@ -32,7 +32,7 @@
 
 @media (max-width: 576px) {
   #logo-image {
-    width: 90px; } }
+    width: 91px; } }
 
 @media (max-width: 768px) {
   #logo-image {
