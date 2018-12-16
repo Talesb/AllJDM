@@ -1,0 +1,47 @@
+#logo-image {
+  width: 25%; }
+
+.homepage_text {
+  text-align: justify; }
+
+#redsilvia-image {
+  width: 85%; }
+
+.footer-text {
+  font-weight: 500; }
+
+/* Small devices (smartphones, 480px and up)*/
+
+/* Medium devices (tablets, 768px and up)*/
+
+/* Medium devices (tablets, 768px and up)*/
+
+/* Large devices (desktops, 992px and up)*/
+
+/* Extra large devices (large desktops, 1200px and up)*/
+
+@media (max-width: 480px) {
+  h1 {
+    text-align: center; }
+  #logo-image {
+    width: 90px; }
+  #redsilvia-image {
+    width: 98%; }
+  .footer-text {
+    font-size: smaller; } }
+
+@media (max-width: 576px) {
+  #logo-image {
+    width: 90px; } }
+
+@media (max-width: 768px) {
+  #logo-image {
+    width: 100px; } }
+
+@media (max-width: 992px) {
+  #footer-limbo {
+    padding-top: 18%; } }
+
+@media (max-width: 1200px) {
+  #footer-limbo {
+    padding-top: 18%; } }
