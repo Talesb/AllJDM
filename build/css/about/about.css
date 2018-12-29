@@ -1,0 +1,60 @@
+.supra-garage {
+  background-image: url("../../../build/images/supra3.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 40%;
+  position: relative;
+  background-size: cover; }
+
+.about-text {
+  padding-top: 2rem;
+  padding-bottom: 6rem; }
+
+.about-icons {
+  width: 60%; }
+
+.line-undertitle {
+  border: 1px solid white; }
+
+.profile-images {
+  width: 80%; }
+
+/* Medium devices (tablets, 768px and up)*/
+
+/* Medium devices (tablets, 768px and up)*/
+
+@media (max-width: 480px) {
+  .supra-garage {
+    padding-right: 20px;
+    padding-left: 20px; }
+  .about-text {
+    padding-bottom: 5rem !important; }
+  .about-icons {
+    width: 45%; }
+  .about-icons-col {
+    padding-top: 10%; }
+  .our-team-title {
+    padding-right: 20px;
+    padding-left: 20px; } }
+
+@media (max-width: 576px) {
+  .supra-garage {
+    padding-right: 20px;
+    padding-left: 20px; }
+  .our-team-title {
+    padding-right: 20px;
+    padding-left: 20px; }
+  .about-icons {
+    width: 45%; }
+  .about-icons-col {
+    padding-top: 10%; } }
+
+@media (max-width: 768px) {
+  .supra-garage {
+    padding-right: 20px;
+    padding-left: 20px; }
+  .our-team-title {
+    padding-right: 20px;
+    padding-left: 20px; }
+  .about-icons-col {
+    padding-top: 10%; } }
