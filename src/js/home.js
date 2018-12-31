@@ -2,8 +2,8 @@
 $(document).ready(function () {
 
     setActivePage();
-
-
+    loadCarPanels();
+    setCarBrandButtonActive();
 });
 
 
@@ -37,5 +37,5 @@ function setActivePage() {
         }
     }
 
-
 }
+

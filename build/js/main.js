@@ -2,8 +2,8 @@
 $(document).ready(function () {
 
     setActivePage();
-
-
+    loadCarPanels();
+    setCarBrandButtonActive();
 });
 
 
@@ -37,8 +37,55 @@ function setActivePage() {
         }
     }
 
+}
+
+
+function loadCarPanels() {
+    $('#carsPanel').load('panelNissan.html');
+}
+
+
+function setCarBrandButtonActive() {
+    $('#nissanButton').click(function () {
+        $("#nissanButton").addClass("active");
+        $("#toyotaButton").removeClass("active");
+        $("#subaruButton").removeClass("active");
+        $("#hondaButton").removeClass("active");
+
+        $('#carsPanel').load('panelNissan.html');
+    });
+
+    $('#toyotaButton').click(function () {
+        $("#toyotaButton").addClass("active");
+        $("#nissanButton").removeClass("active");
+        $("#subaruButton").removeClass("active");
+        $("#hondaButton").removeClass("active");
+
+        $('#carsPanel').load('panelToyota.html');
+    });
+
+    $('#subaruButton').click(function () {
+        $("#subaruButton").addClass("active");
+        $("#toyotaButton").removeClass("active");
+        $("#nissanButton").removeClass("active");
+        $("#hondaButton").removeClass("active");
+
+        $('#carsPanel').load('panelSubaru.html');
+    });
+
+    $('#hondaButton').click(function () {
+        $("#hondaButton").addClass("active");
+        $("#toyotaButton").removeClass("active");
+        $("#subaruButton").removeClass("active");
+        $("#nissanButton").removeClass("active");
+
+        $('#carsPanel').load('panelHonda.html');
+    });
+
+
 
 }
+
 // ===== Scroll to Top ==== 
 $(window).scroll(function () {
     if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
